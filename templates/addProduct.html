@@ -1,0 +1,35 @@
+{% import "utility.html" as util %} 
+
+
+{{ util.htmltemplatetop() }}
+    
+    {{ util.navbar() }}
+    <form>
+        <div class="form-group">
+          <label for="product_id">Product Id </label>
+          <input type="text" class="form-control" id="product_id" aria-describedby="emailHelp" placeholder="Enter Product Id" name="product_id">
+        </div>
+        <div class="form-group">
+            Role is fixed as Manufacturer
+        </div>
+        <div class="form-group">
+            <label for="productName">Product Name </label>
+            <input type="text" class="form-control" id="ProductName" aria-describedby="emailHelp" placeholder="Enter Product Name" name="ProductName">
+          </div>
+          <div class="form-group">
+            <label for="status">Intial Status </label>
+            <input type="text" class="form-control" id="status" aria-describedby="emailHelp" placeholder="Enter Product status" name="status">
+          </div>
+          <div class="form-group">
+            Product Source Set to :Manufacturer
+          </div>
+          <div class="form-group">
+            <label for="destination">Next Destination </label>
+            <input type="text" class="form-control" id="destination" aria-describedby="emailHelp" placeholder="Enter Next Destination" name="destination">
+          </div>
+          <div class="form-group">
+            <label for="remarks">Remarks </label>
+            <textarea class="form-control" id="remarks" name="remarks" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Create Product</button>
+      </form>
